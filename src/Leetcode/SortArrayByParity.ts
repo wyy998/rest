@@ -12,6 +12,7 @@
  * @param A
  */
 function sortArrayByParity(A: number[]): number[] {
+  if (A == null) return null;
   let left = 0;
   let right = A.length - 1;
   while (left < right) {
@@ -35,5 +36,7 @@ function sortArrayByParity(A: number[]): number[] {
 const test = [3, 1, 4, 2];
 console.log(sortArrayByParity(test));
 /**
+ * 🎉Acceped!
  * It seems the same time cost compare exchange in place to construct new Array.
  */
+export default sortArrayByParity;
